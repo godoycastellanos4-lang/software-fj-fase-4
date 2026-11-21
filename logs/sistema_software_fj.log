@@ -1,0 +1,21 @@
+2026-11-20 21:40:16 | INFO | Cliente registrado: [Cliente CLI-01] Ana María Rojas | Correo: ana.rojas@correo.com | Tel: 3104567890
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 1: Registrar cliente válido': [Cliente CLI-01] Ana María Rojas | Correo: ana.rojas@correo.com | Tel: 3104567890
+2026-11-20 21:40:16 | ERROR | [ERR_RESERVA] Fallo en 'Op 2: Registrar cliente con correo inválido (encadenamiento)': Fallo al crear ficha de cliente por datos inválidos.
+2026-11-20 21:40:16 | INFO | Servicio registrado: [Servicio SRV-SAL-1] Sala Reuniones Norte | Tarifa base: $50,000.00 | Disponible | Tipo: Sala (Cap. máx: 10)
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 3: Crear servicio de Sala': [Servicio SRV-SAL-1] Sala Reuniones Norte | Tarifa base: $50,000.00 | Disponible | Tipo: Sala (Cap. máx: 10)
+2026-11-20 21:40:16 | INFO | Servicio registrado: [Servicio SRV-EQ-1] Laptop Desarrollo i7 | Tarifa base: $25,000.00 | Disponible | Tipo: Alquiler Equipo (Stock: 5)
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 4: Crear servicio de Alquiler de Equipo': [Servicio SRV-EQ-1] Laptop Desarrollo i7 | Tarifa base: $25,000.00 | Disponible | Tipo: Alquiler Equipo (Stock: 5)
+2026-11-20 21:40:16 | INFO | Servicio registrado: [Servicio SRV-ASE-1] Asesoría Arquitectura Cloud | Tarifa base: $120,000.00 | Disponible | Tipo: Asesoría (Remota)
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 5: Crear servicio de Asesoría': [Servicio SRV-ASE-1] Asesoría Arquitectura Cloud | Tarifa base: $120,000.00 | Disponible | Tipo: Asesoría (Remota)
+2026-11-20 21:40:16 | ERROR | [ERR_VALIDACION] Fallo en 'Op 6: Crear servicio con tarifa inválida': La tarifa base de 'Asesoría Inválida' debe ser mayor que cero.
+2026-11-20 21:40:16 | INFO | Reserva creada: RES-101 para Ana María Rojas
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 7: Crear y confirmar reserva de sala': Total confirmado: $160,650.00
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 8: Procesar reserva confirmada RES-101': Reserva RES-101 procesada exitosamente por $160,650.00.
+2026-11-20 21:40:16 | ERROR | [ERR_RESERVA] Fallo en 'Op 9: Cancelar reserva ya procesada RES-101': La reserva RES-101 ya fue procesada y no puede cancelarse.
+2026-11-20 21:40:16 | INFO | Reserva creada: RES-102 para Ana María Rojas
+2026-11-20 21:40:16 | ERROR | [ERR_SERVICIO_NO_DISP] Fallo en 'Op 10: Confirmar reserva de equipo sin stock suficiente': Stock insuficiente para 'Laptop Desarrollo i7': solicitados 20, disponibles 5.
+2026-11-20 21:40:16 | INFO | Reserva creada: RES-103 para Ana María Rojas
+2026-11-20 21:40:16 | ERROR | [ERR_SERVICIO_NO_DISP] Fallo en 'Op 11: Confirmar reserva sobre servicio no disponible': El servicio 'Asesoría Arquitectura Cloud' no está disponible.
+2026-11-20 21:40:16 | INFO | Reserva creada: RES-104 para Ana María Rojas
+2026-11-20 21:40:16 | INFO | Reserva RES-104 cancelada. Motivo: Reprogramación solicitada
+2026-11-20 21:40:16 | INFO | Éxito en 'Op 12: Crear y cancelar reserva pendiente RES-104': RES-104 cancelada
